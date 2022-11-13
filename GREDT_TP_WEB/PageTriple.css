@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "SLT";
+    src: url(CascadiaCode.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.contexte {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    font-family: "SLT";
+    position: absolute;
+    width: auto;
+    left: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: inset -2px -2px #000;
+    top: 8%;
+    z-index: 999;
+    margin: auto;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    
+}
+
+.Bouton {
+    width: auto;
+    opacity: 0.6;
+    border: 2px solid black;
+    color: White;
+    border-radius: 10px;
+    font-size: larger;
+    font-family: "SLT";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -2px -2px #000;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+}
+
+.Bouton:hover ~ img {
+    filter: blur(0px);
+    
+}
+
+.Droite:hover .Bouton {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.Centre:hover .Bouton {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Gauche:hover .Bouton {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(4px);
+
+}
+
+img:hover {
+    filter: blur(0px);
+}
+
+.Gauche {
+    position: relative;
+    height: 100%;
+    max-width: 33.3%;
+    min-width: 33.3%;
+    object-fit: cover;
+}
+
+.Droite {
+    position: relative;
+    height: 100%;
+    max-width: 33.3%;
+    min-width: 33.3%;
+    object-fit: cover;
+}
+
+.Centre{
+    position: relative;
+    height: 100%;
+    max-width: 33.3%;
+    min-width: 33.3%;
+    object-fit: cover;
+}
+
+.background {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: White;
+}
+

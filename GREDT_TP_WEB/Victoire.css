@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "SLT";
+    src: url(CascadiaCode.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contexte {
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    font-family: "SLT";
+    position: absolute;
+    width: auto;
+    left: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: inset -2px -2px #000;
+    z-index: 999;
+    top: 8%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    
+}
+
+.Centre:hover .Bouton {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    size: cover;
+}
+
+.Bouton {
+    width: auto;
+    opacity: 0.6;
+    border: 2px solid White;
+    color: White;
+    border-radius: 10px;
+    font-size: larger;
+    font-family: "SLT";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+}
+
+body {
+    background-image: url(Victoire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
